@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 
-import 'package:cinemapedia/config/constants/environment.dart';
 import 'package:cinemapedia/domain/datasources/movies_datasource.dart';
 
 import 'package:cinemapedia/infrastructure/mappers/movie_mapper.dart';
@@ -13,7 +12,7 @@ class MoviedbDatasource extends MoviesDatasource {
   final dio = Dio(BaseOptions(
     baseUrl: 'https://api.themoviedb.org/3',
     queryParameters: {
-      'api_key': Environment.theMovieDbKey,
+      'api_key': '5540af5fcff4ca8083d11493312ac341',
       'language': 'es-MX'
     }
   ));
